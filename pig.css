@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="button"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #7f8c8d;
+  background-color: #ecf0f1;
+  color: #000000;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+input[type="text"]:focus,
+input[type="button"]:focus {
+  border-color: #e74c3c;
+  outline: none;
+  background-color: #f39c12;
+}
+
+/* Button Styling */
+input[type="button"] {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+input[type="button"]:hover {
+  background-color: transparent; 
+  color: #ffffff;
+}
+
+/* Score and Die Display */
+#score1,
+#score2,
+#die,
+#total {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: transparent;
+  padding: 1.5rem;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  width: 150px;
+  height: 80px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Turn Info Section */
+#turn {
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span-div{
+    padding: 0rem 1.5rem;
+}
+
+/* Rules Section */
+fieldset {
+  border: 2px solid #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000000;
+  margin-bottom: 2.5rem;
+}
+
+legend {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* List Styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Footer styling */
+small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  input[type="button"] {
+    padding: 10px;
+  }
+
+  #score1,
+  #score2,
+  #die,
+  #total {
+    width: 70px;
+    font-size: 1.2rem;
+  }
+}
